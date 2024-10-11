@@ -81,7 +81,6 @@ function suffix_filename()
 
 function find_and_replace_filename()
 {
-    
     if [[ $1 == .* ]]; then
         hidden=1
         basename="${1#*.}"
@@ -138,8 +137,6 @@ function numbered_filenaming()
     file_name=$(suffix_filename $file_name $3)
 
     echo $file_name
-
-
 }
 
 
